@@ -1,1 +1,9 @@
-
+1.安装jdk
+2.安装maven
+3.安装nexus
+  3.1 解压tar包
+  3.2 bin下启动nexus start
+  3.3 设置开机启动
+    -- cp nexus /etc/init.d/
+    -- chkconfig --add nexus
+    -- chkconfig nexus on
