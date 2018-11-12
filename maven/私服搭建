@@ -7,3 +7,18 @@
     -- cp nexus /etc/init.d/
     -- chkconfig --add nexus
     -- chkconfig nexus on
+项目中pom.xml配置
+
+<!--发布到私服配置-->
+    <distributionManagement>
+        <repository>
+            <name>Release</name>
+            <id>releases</id>
+            <url>http://192.168.0.120:9002/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>snapshots</name>
+            <url>http://192.168.0.120:9002/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
