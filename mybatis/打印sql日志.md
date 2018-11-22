@@ -1,5 +1,4 @@
 
-http://www.mybatis.org/mybatis-3/zh/logging.html
 
 
 <configuration>
@@ -8,3 +7,6 @@ http://www.mybatis.org/mybatis-3/zh/logging.html
     </settings>
 
 </configuration>
+
+
+http://www.mybatis.org/mybatis-3/zh/logging.html
