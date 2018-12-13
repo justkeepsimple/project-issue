@@ -1,2 +1,32 @@
 
 192.168.0.120:80/user/user/money/verifyCode   POST  支付密码设置或修改时向手机号发送验证码
+
+
+192.168.0.120:80/user/user/money/info   GET  获取当前登陆人的资金账户信息
+
+
+192.168.0.120:80/user/user/money/passwd   POST  设置交易密码
+{
+"code":"",
+"payPasswd":"", //6位纯数字
+
+}
+
+
+192.168.0.120:80/user/user/money/withdrawal/info  GET  获取用户自己的提现记录
+
+
+192.168.0.120:80/user/user/money/applyWithdrawal  POST  用户申请提现
+{
+"userId":"",
+"money":"", //6位纯数字
+
+}
+
+
+
+192.168.0.120:80/user/user/info/realemail/{userId}   GET  获取用户的认证邮箱
+
+
+
+192.168.0.120:80/user/user/info/realname/{userId}  GET  获取用户实名认证信息
