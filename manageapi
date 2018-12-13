@@ -1,4 +1,4 @@
-192.168.1.113:7001/user//manager/withdrawal/info   POST
+192.168.1.113:7001/user//manager/withdrawal/info   POST    获取所有提现记录
 
 {
 	"id":"",
