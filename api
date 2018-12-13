@@ -1,1 +1,2 @@
 
+192.168.0.120:80/user/user/money/verifyCode   POST  支付密码设置或修改时向手机号发送验证码
