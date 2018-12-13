@@ -1,0 +1,7 @@
+192.168.1.113:7001/user//manager/withdrawal/info   POST
+
+{
+	"id":"",
+  "phone":"",
+  "state":""
+}
