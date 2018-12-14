@@ -1,9 +1,10 @@
 192.168.1.113:7001/user/manager/withdrawal/info   POST    获取所有提现记录
-
 {
 	"id":"",
   "phone":"",
-  "state":""
+  "state":"",
+  "currentPage":"1",
+  "pageSize":"1"
 }
 '提现状态  1: 待审核  2:审核通过 3:审核未通过   4:用户撤销'
 
