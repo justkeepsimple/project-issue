@@ -1,4 +1,4 @@
-192.168.1.113:7001/user//manager/withdrawal/info   POST    获取所有提现记录
+192.168.1.113:7001/user/manager/withdrawal/info   POST    获取所有提现记录
 
 {
 	"id":"",
@@ -6,3 +6,18 @@
   "state":""
 }
 '提现状态  1: 待审核  2:审核通过 3:审核未通过   4:用户撤销'
+
+
+192.168.1.113:7001/user/manager/withdrawal/unagree   POST
+{
+	"id": "1",
+	"remark":"暂时没钱，不给提现"
+}
+
+ 
+192.168.1.113:7001/user/manager/withdrawal/agree    POST
+
+{
+	"id": "2",
+	"remark":""
+}
