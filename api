@@ -13,7 +13,11 @@
 }
 
 
-192.168.0.120:80/user/user/money/withdrawal/info  GET  获取用户自己的提现记录
+192.168.0.120:80/user/user/money/withdrawal/info  POST  获取用户自己的提现记录
+{
+	"currentPage":"1",
+	"pageSize":"1"
+}
 
 
 192.168.0.120:80/user/user/money/applyWithdrawal  POST  用户申请提现
