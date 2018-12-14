@@ -25,3 +25,10 @@
 
 
 192.168.1.113:7001/user/manager/user/info/17685302679  后台管理根据手机号获取用户信息
+
+
+user/manager/withdrawal/agree POST
+{
+	"money": 10.00,
+	"userId": 4
+}
