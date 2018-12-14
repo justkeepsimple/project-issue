@@ -8,14 +8,14 @@
 '提现状态  1: 待审核  2:审核通过 3:审核未通过   4:用户撤销'
 
 
-192.168.1.113:7001/user/manager/withdrawal/unagree   POST
+192.168.1.113:7001/user/manager/withdrawal/unagree   POST   同意用户的提现申请
 {
 	"id": "1",
 	"remark":"暂时没钱，不给提现"
 }
 
  
-192.168.1.113:7001/user/manager/withdrawal/agree    POST
+192.168.1.113:7001/user/manager/withdrawal/agree    POST  不同意用户的提现申请
 
 {
 	"id": "2",
