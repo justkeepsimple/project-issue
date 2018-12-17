@@ -40,3 +40,22 @@
 
 
 /user/user/trade/info?currentPage=1&pageSize=2   GET   获取当前用户的所有交易记录
+
+
+
+
+`id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `user_id` int(11) NOT NULL COMMENT '用户id',
+  `tarde_type` int(1) NOT NULL COMMENT '交易类型 1：充值 2：支付 3：提现 4：其他',
+  `amount` decimal(10,2) NOT NULL COMMENT '交易额',
+  `state` int(1) NOT NULL COMMENT '交易状态 1：成功  2：失败',
+  `asso_id` int(11) DEFAULT NULL COMMENT '关联业务的id(充值、支付、提现、其他)',
+  `payment` varchar(255) DEFAULT NULL COMMENT '付款方式',
+  `platform_code` int(3) NOT NULL COMMENT '交易平台代码 查看t_user_dict_platform表。',
+  `awarding` decimal(13,2) NOT NULL DEFAULT '0.00' COMMENT '积分奖励',
+  `classify` varchar(255) DEFAULT NULL COMMENT '分类',
+  `remark` varchar(255) DEFAULT NULL COMMENT '备注',
+  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `create_user` int(11) DEFAULT NULL COMMENT '创建人',
+  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  `update_user` int(11) DEFAULT NULL COMMENT '更新人',
