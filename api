@@ -39,4 +39,4 @@
 
 
 
-/user/user/trade/info?currentPage=1&pageSize=2
+/user/user/trade/info?currentPage=1&pageSize=2   GET   获取当前用户的所有交易记录
