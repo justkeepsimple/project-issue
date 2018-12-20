@@ -1,5 +1,5 @@
 
-一、选定安装文件目录
+一、选定安装文件目录　yum install -y gcc gcc-c++
 
 二、安装PCRE库
 
