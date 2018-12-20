@@ -21,7 +21,7 @@
     
  
  四、安装openssl
- 
+ ./configure  --prefix=/zgg/nginx/usr/local/ 指定安装路径
  
  五、安装nginx
  
