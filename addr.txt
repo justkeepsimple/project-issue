@@ -1,7 +1,7 @@
 192.168.1.112:7001
 
 
-addr/add
+addr/add  POST 新增收货地址
 {
 	"area": "区县-云岩区",
 	"city": "城市-贵阳市",
@@ -30,13 +30,32 @@ addr/add
 }
 
 
+addr/update  POST 修改收货地址
 
 
+{
+	"area": "区县-云岩区",
+	"city": "城市-贵阳市",
+	"defaultAddr": 0,
+	"detailAddr": "详细地址-三桥圣泉流云花园",
+	"mobile": "移动电话",
+	"name": "收货人姓名-萧克明",
+	"phone": "固定电话",
+	"postCode": "邮编",
+	"province": "省份-贵州省",
+	"signType": 1,
+	"id":1
+}
 
+addr/delete/{id}  POST 删除收货地址
 
+addr/default/{id} POST 设置默认地址
 
+ addr/reset   POST   设置所有收货地址为非默认收货地址
 
+ addr/default/info   POST   获取默认地址的信息
 
+addr/info   POST  获取所有收货地址的信息
 
 
 
