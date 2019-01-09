@@ -1,3 +1,8 @@
 
 使用maven3.5.0时出现数组下标越界问题
 maven3.5.0存在这个bug,将其版本升级
+
+
+mvn install:install-file -Dfile=yop-java-sdk-3.1.1-jdk18.jar -Dgroup
+Id=yop -DartifactId=yop -Dversion=1.0 -Dpackaging=jar
+
