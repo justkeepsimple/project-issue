@@ -1,0 +1,15 @@
+vim /usr/lib/systemd/system/docker.service
+
+在文件中 [Service] 部分，增加两行：
+
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock
+
+
+systemctl daemon-reload  
+systemctl restart docker.service  
+
+
+netstat -tnlp |grep 2375
+
+curl 127.0.0.1:2375/info
